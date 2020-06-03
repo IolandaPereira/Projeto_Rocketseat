@@ -112,7 +112,7 @@ Toda caixa tem largura, altura, espaçamentos, preenchimentos, bordas, cor, fund
     height: 72px;
     background-color: rgba(0,0,0,0.08);
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px
+    border-bottom-left-radius: 8px;
 }
 
 #page-home main a span::after{
@@ -122,3 +122,31 @@ Toda caixa tem largura, altura, espaçamentos, preenchimentos, bordas, cor, fund
     height: 20px;
 }
 
+#page-home main a strong{
+    flex: 1;
+    text-align: center;
+}
+
+
+
+@media (max-width:900px){ 
+    #page-home{
+        background-position: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align:  center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50px;
+        transform: translate(-50%);
+    }
+
+    #page-home main{
+        text-align: center;
+    }
+}
